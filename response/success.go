@@ -23,6 +23,10 @@ func Accepted(msg string, data interface{}) Response {
 	return success(msg, data, http.StatusAccepted)
 }
 
+func NonAutoritativeInfo(msg string, data interface{}) Response {
+	return success(msg, data, http.StatusNonAuthoritativeInfo)
+}
+
 func NoContent(msg string, data interface{}) Response {
 	return success(msg, data, http.StatusNoContent)
 }
